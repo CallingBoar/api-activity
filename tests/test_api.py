@@ -1,6 +1,9 @@
 # first import built in fixtures, then third parties, then your own
+# Generative AI used
 
 import pytest
+
+# Chat GPT recommended this line be change from "from app import app" and that app.py be moved to src/api_activity/ because I kept running into "ModuleNotFound" errors
 from api_activity.app import app
 
 @pytest.fixture
